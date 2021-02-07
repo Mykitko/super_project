@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Sriracha&display=swap');
+
+body{
+	background: linear-gradient(to right, #4ca1af, #c4e0e5);
+	
+}
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+}
+
+/* header?*/
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000px;
+}
+
+.mykitko{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.nav{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav_link{
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 7px;
+	position: relative;
+}
+
+.nav_link:hover{
+	color: #fce38a;
+
+}
+
+.nav_link:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #fce38a;
+	opacity: 0;
+
+	position: absolute;
+	z-index: 1;
+
+	transition: opacity 0.2s linear;
+}
+
+.nav_link:hover{
+	color: #fce38a;
+}
+
+.nav_link:hover:after{
+	display: block;
+	opacity: 1;
+}
+
+
+/* container*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*intro*/
+.intro{
+	background: linear-gradient(to right, #4ca1af, #c4e0e5);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	-webkit-backgrounf-size:cover;
+	background-size: cover;
+
+}
+
+.intro_title{
+	font-size: 90pt;
+	text-align: center;
+	font-family: Potta one;
+	line-height: 1;
+	color: #fff;
+}
+
+.intro_inner{
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.sub{
+	font-size: 22px;
+	color: #fff;
+	font-family: sriracha;
+	text-align: center;
+}
+
+.intro_title:after{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 5px;
+	margin: 60px auto 0;
+	background-color: #fff;
+}
+
+/*main section___*/
+.main{
+
+}
